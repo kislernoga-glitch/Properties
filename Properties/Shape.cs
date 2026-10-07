@@ -51,7 +51,7 @@ namespace Properties
             set { if(value>0)
                     width = value; }
         }
-        public Rectangle(double length,double width)
+        public Rectangle(double length,double width, string name): base(name)
         {
             Length=length;
             Width = width;
@@ -66,7 +66,7 @@ namespace Properties
         //פעולה בונה של ריבוע 
         //מזמנת את הפעולה הבונה של ההורה (כדי ליצור ריבוע קודם צריך שיהיה
         //מלבן)
-        public Square(double length):base(length,length)
+        public Square(double length):base(length,length, "Square")
         {
 
         }
