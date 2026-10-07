@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Properties
 {
-    public class Shape
+    public abstract class Shape
     {
         public string Name { get; set; }
         public Shape(string name)
         {
             Name = name;
         }
-        public double Area() { return 0.0; }
-        public double Perimeter() { return 0.0; }
+        abstract public double Area();
+        abstract public double Perimeter();
 
     }
 
