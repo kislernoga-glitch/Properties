@@ -10,7 +10,6 @@
             Console.WriteLine( sq.Area());
 
 
-
         }
     }
 }
